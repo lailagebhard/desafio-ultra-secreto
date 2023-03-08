@@ -1,0 +1,22 @@
+package com.laila.desafioUltraSecreto.dtos;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
+public class EmailDto {
+
+    @NotBlank
+    @Email
+    private String emailFrom;
+
+    @NotBlank
+    @Email
+    private String emailTo;
+
+    @NotBlank
+    private String subject;
+
+    @NotBlank
+    private String text;
+
+}
